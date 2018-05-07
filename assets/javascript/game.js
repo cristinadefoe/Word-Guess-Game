@@ -41,11 +41,6 @@ function startGame() {
     document.getElementById("numberofGuessesRemaining1").innerHTML = guessesLeft;
     document.getElementById("wins1").innerHTML = winsCount;
     document.getElementById("losses1").innerHTML = lossesCount;
-
-    console.log(wordToGuess);
-    console.log(lettersGuessed);
-    console.log(numberGuessesRemaining);
-    console.log(emptyAndFilled);
 }
 
 function checkLetters(letter) {
@@ -71,13 +66,9 @@ function checkLetters(letter) {
         incorrectLetters.push(letter);
         guessesLeft--;
     }
-
-    console.log(emptyAndFilled);
 }
 
 function roundDone() {
-    console.log("Wins: " + winsCount + " | Losses: " + lossesCount + " | Guesses Left " + guessesLeft);
-
     document.getElementById("numberofGuessesRemaining1").innerHTML = guessesLeft;
     document.getElementById("wordToGuess1").innerHTML = emptyAndFilled.join(" ");
     document.getElementById("wrongGuesses1").innerHTML = incorrectLetters.join(" ");
@@ -114,6 +105,4 @@ document.onkeyup = function (event) {
     var lettersGuessed = String.fromCharCode(event.keyCode).toLowerCase();
     checkLetters(lettersGuessed);
     roundDone();
-
-    console.log(lettersGuessed);
 }
