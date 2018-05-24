@@ -1,6 +1,3 @@
-// GLOBAL VARIABLES
-//*******************************************************************************************/
-
 //Arrays and variables for holding data
 var wordList = ["luggage", "colorado", "bahamas", "disneyland", "airplane", "camera",
     "airport", "tourist", "paris", "jamaica"];
@@ -14,9 +11,6 @@ var incorrectLetters = [];
 var winsCount = 0;
 var lossesCount = 0;
 var guessesLeft = 9;
-
-// Functions 
-//*******************************************************************************************/
 
 //Function start game
 function startGame() {
@@ -97,7 +91,6 @@ function roundDone() {
 }
 
 // Main 
-//*******************************************************************************************/
 startGame();
 
 //Listen for letters entered by user

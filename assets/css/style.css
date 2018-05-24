@@ -1,10 +1,7 @@
-.container-fluid{
-      background-color:  #1D1E2C;
-}
-
 .jumbotron {
     text-align: center;
     background-color: #AC9FBB;
+    color: white;
 }
 
 .card-header {
