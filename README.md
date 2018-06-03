@@ -21,7 +21,7 @@ Press any key to start the game.
 
 ## Author
 
-* **Cristina Defoe** - 
+* **Cristina Defoe** 
 
 ## Acknowledgments
 
